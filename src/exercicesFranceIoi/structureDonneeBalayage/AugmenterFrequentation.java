@@ -18,9 +18,11 @@ public class AugmenterFrequentation {
 
         @Override
         public int compareTo(Spectacle o) {
-            return durree - o.durree;
+            if(duree != o.duree){
+                return durree - o.durree;
+            }
+            return frequentation - o.frequentation;
         }
-
 
     }
 
